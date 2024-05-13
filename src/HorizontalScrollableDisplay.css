@@ -1,3 +1,4 @@
+
 .container {
   display: flex;
   flex-direction: column;
@@ -5,7 +6,7 @@
   margin-inline: auto;
   justify-content: center;
   align-self: center;
-  /* margin-top: 25vh; */
+  height: 100vh;
 }
 
 .scrollable {
@@ -19,4 +20,8 @@
   max-width: 300px;
   max-height: 200px;
   object-fit: cover;
+}
+
+.scrollable > img:hover{
+  transform: scale(2);
 }
