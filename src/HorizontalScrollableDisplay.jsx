@@ -1,8 +1,10 @@
+import { useState, useEffect } from "react";
 import "./HorizontalScrollableDisplay.css";
 
 const images = [];
 
 export default function HorizontalScrollableDisplay() {
+    
   return (
     <>
       <div className="container">

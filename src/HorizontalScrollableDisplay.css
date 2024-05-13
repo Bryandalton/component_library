@@ -1,21 +1,22 @@
 .container {
-    inline-size: min(100%);
-    margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  inline-size: min(100% - 4rem, 70rem);
+  margin-inline: auto;
+  justify-content: center;
+  align-self: center;
+  /* margin-top: 25vh; */
 }
 
 .scrollable {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 18%;
-    padding: .5rem;
-    overflow: scroll;
-    overflow-y: hidden;
-
+  display: grid;
+  gap: 0.5rem;
+  grid-auto-flow: column;
+  overflow-x: auto;
 }
 
 .scrollable > img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: cover;
 }
